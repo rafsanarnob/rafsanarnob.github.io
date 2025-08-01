@@ -105,13 +105,10 @@
 		height: 100%;
 		background-color: #ffffff;
 		background-image: url("images/overlay.png"), url("../../images/bg2.jpg");
-		background-image: url("images/overlay.png"), url("../../images/bg2.jpg");
-		background-image: url("images/overlay.png"), url("../../images/bg2.jpg");
-		background-image: url("images/overlay.png"), url("../../images/bg2.jpg");
-		background-repeat: repeat,			no-repeat,			no-repeat;
-		background-size: 100px 100px, cover,				cover;
-		background-position: top left,		center center,		bottom center;
-		background-attachment: fixed,			fixed,				fixed;
+		background-repeat: repeat,			no-repeat;
+		background-size: 100px 100px, cover;
+		background-position: top left,		center center;
+		background-attachment: fixed,			fixed;
 	}
 
 		body:after {
@@ -125,9 +122,6 @@
 			opacity: 0;
 			z-index: 1;
 			background-color: #ffffff;
-			background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 0, 0, 0.25) 5%, rgba(0, 0, 0, 0.5));
-			background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 0, 0, 0.25) 5%, rgba(0, 0, 0, 0.5));
-			background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 0, 0, 0.25) 5%, rgba(0, 0, 0, 0.5));
 			background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 0, 0, 0.25) 5%, rgba(0, 0, 0, 0.5));
 			background-repeat: repeat,			no-repeat;
 			background-size: 100px 100px, cover;
@@ -741,17 +735,12 @@
 			ul.icons li a {
 				text-decoration: none;
 				position: relative;
-				/* display: block; */
 				font-size: 2em;
-				/* width: 1.75em;
-				height: 1.75em;
-				border-radius: 10%;
-				border: solid 1px #333;
-				line-height: 1.75em; */
 				overflow: hidden;
 				text-align: center;
-				/* text-indent: 3.75em; */
 				white-space: nowrap;
+				/* NEW: Added transition for smooth animation */
+				transition: transform 0.2s ease-in-out;
 			}
 
 				ul.icons li a:before {
@@ -769,12 +758,10 @@
 
 				ul.icons li a:before {
 					color: #888;
-					/* text-shadow: 1.25px 0px 0px #333, -1.25px 0px 0px #333, 0px 1.25px 0px #333, 0px -1.25px 0px #333; */
 				}
 
 				ul.icons li a:hover:before {
 					color: #b00;
-					/* text-shadow: 1.25px 0px 0px #b00, -1.25px 0px 0px #b00, 0px 1.25px 0px #b00, 0px -1.25px 0px #b00; */
 				}
 
 				ul.icons li a:before {
@@ -789,8 +776,9 @@
 					text-indent: 0;
 				}
 
+				/* NEW: Added hover effect for the whole icon link */
 				ul.icons li a:hover {
-					border-color: #b00;
+					transform: scale(1.15) translateY(-3px);
 				}
 
 		@media screen and (max-width: 480px) {
@@ -812,10 +800,11 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		-moz-transition: background-color 0.17s ease-in-out, border-color 0.17s ease-in-out, color 0.17s ease-in-out;
-		-webkit-transition: background-color 0.17s ease-in-out, border-color 0.17s ease-in-out, color 0.17s ease-in-out;
-		-ms-transition: background-color 0.17s ease-in-out, border-color 0.17s ease-in-out, color 0.17s ease-in-out;
-		transition: background-color 0.17s ease-in-out, border-color 0.17s ease-in-out, color 0.17s ease-in-out;
+		/* UPDATED: Added 'transform' to the transition list for smooth animation */
+		-moz-transition: background-color 0.17s ease-in-out, border-color 0.17s ease-in-out, color 0.17s ease-in-out, transform 0.2s ease;
+		-webkit-transition: background-color 0.17s ease-in-out, border-color 0.17s ease-in-out, color 0.17s ease-in-out, transform 0.2s ease;
+		-ms-transition: background-color 0.17s ease-in-out, border-color 0.17s ease-in-out, color 0.17s ease-in-out, transform 0.2s ease;
+		transition: background-color 0.17s ease-in-out, border-color 0.17s ease-in-out, color 0.17s ease-in-out, transform 0.2s ease;
 		display: inline-block;
 		height: 2.75em;
 		line-height: 2.75em;
@@ -837,6 +826,8 @@
 		.button:hover {
 			border-color: #b00;
 			color: #b00 !important;
+			/* NEW: Added transform for the hover animation */
+			transform: translateY(-4px) scale(1.05);
 		}
 
 		input[type="submit"].icon,
@@ -909,11 +900,9 @@
 		transition: opacity 1s ease, transform 1s ease;
 		padding: 4.5em 3em 3em 3em;
 		background: #111d;
-		/* background: #ffffff; */
 		border-radius: 4px;
 		cursor: default;
 		max-width: 100%;
-		/* opacity: 0.95; */
 		position: relative;
 		text-align: center;
 		width: 27em;
@@ -1065,11 +1054,19 @@
 	}
 
 .is-preload {
-    /* Add your styles here */
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
 .is-preload.loaded {
     opacity: 1;
+}
+
+/* ================================
+My Custom Footer Button Styles
+================================
+*/
+#main footer button {
+	display: block;
+	margin: 1em auto;
 }

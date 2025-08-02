@@ -49,6 +49,8 @@
 
 	body {
 		-webkit-text-size-adjust: none;
+        /* UPDATED: Added this line to disable text selection */
+        user-select: none;
 	}
 
 	mark {

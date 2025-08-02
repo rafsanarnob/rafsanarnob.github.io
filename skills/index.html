@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        
+        <title>My Skills - Rafsan J. Arnob</title>
+        <link href="/images/favicon.ico" rel="shortcut icon" />
+        <link rel="stylesheet" href="/assets/css/main.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" xintegrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+        <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+
+        <style>
+            /* Custom styles for the skills list */
+            .skills-container h2 {
+                margin-top: 1.5em;
+                margin-bottom: 1em;
+            }
+            .skills-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
+            .skills-list li {
+                display: inline-block;
+                background: #333;
+                color: #fff;
+                padding: 0.5em 1.25em;
+                margin: 0.5em;
+                border-radius: 5px;
+                font-size: 0.9em;
+                font-weight: 300;
+                text-transform: none;
+                letter-spacing: 0.075em;
+            }
+            /* UPDATED: Increased space above the footer/button for better symmetry */
+            #main footer {
+                margin-top: 3.5em;
+            }
+        </style>
+
+    </head>
+    <body class="is-preload">
+        <div id="wrapper">
+            <section id="main">
+                <header>
+                    <span class="avatar"><img src="/images/avatar.jpg" alt="" /></span>
+                    <h1>My Skills</h1>
+                </header>
+                
+                <div class="skills-container">
+                    
+                    <h2>Languages</h2>
+                    <ul class="skills-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SCSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                    </ul>
+
+                    <h2>Frameworks & Libraries</h2>
+                    <ul class="skills-list">
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Bootstrap</li>
+                        <li>Laravel</li>
+                        <li>Vue.js</li>
+                        <!-- UPDATED: Added Next.js -->
+                        <li>Next.js</li>
+                    </ul>
+
+                </div>
+
+                <footer>
+                    <ul class="actions special">
+                        <li><button onclick="window.location.href='/'">Back to Home</button></li>
+                    </ul>
+                </footer>
+            </section>
+            <footer id="footer">
+                <ul class="copyright">
+                    <li>&copy; Rafsan J. Arnob</li>
+                    <li>Live On <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Vercel</a></li>
+                </ul>
+            </footer>
+        </div>
+        <script>
+            window.addEventListener('load', function() {
+                document.body.classList.remove('is-preload');
+            });
+        </script>
+    </body>
+</html>

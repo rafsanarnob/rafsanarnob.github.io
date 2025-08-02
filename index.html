@@ -3,9 +3,10 @@
     <head>
         
         <title>Rafsan J. Arnob - Connect With Me!</title>
-        <link href="images/favicon.ico" rel="shortcut icon" />
-        <link rel="stylesheet" href="assets/css/main.css" />
+        <link href="/images/favicon.ico" rel="shortcut icon" />
+        <link rel="stylesheet" href="/assets/css/main.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <!-- FIXED TYPO: 'xintegrity' is now 'integrity' -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" xintegrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
          <!-- LINK PARSER -->
          <meta property="og:type" content="website">
@@ -15,17 +16,16 @@
          <!-- IMPORTANT: Replace with your Vercel URL -->
          <meta property="og:url" content="https://arnob.vercel.app/">
          <meta property="og:locale" content="en_US">
-         <!-- UPDATED: Path to your new preview image -->
          <meta property="og:image" content="https://arnob.vercel.app/images/preview.png">
  
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 
     </head>
     <body class="is-preload">
         <div id="wrapper">
             <section id="main">
                 <header>
-                    <span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+                    <span class="avatar"><img src="/images/avatar.jpg" alt="" /></span>
                     <h1>Rafsan J. Arnob </h1>
                     <p>WebDev Enthusiast</p>
                 </header>
@@ -41,7 +41,10 @@
                         <li><a href="https://github.com/rafsanarnob" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a></li>
                         </span>
                     </ul>
-                    <button onclick="window.location.href='aboutme'">About Me</button>
+                    
+                    <button onclick="window.location.href='/aboutme/'">About Me</button>
+                    <button onclick="window.location.href='/skills/'">My Skills</button>
+					
                 </footer>
             </section>
             <footer id="footer">

@@ -104,7 +104,7 @@
 	body {
 		height: 100%;
 		background-color: #ffffff;
-		background-image: url("images/overlay.png"), url("../../images/bg2.jpg");
+		background-image: url("/images/overlay.png"), url("/images/bg2.jpg");
 		background-repeat: repeat,			no-repeat;
 		background-size: 100px 100px, cover;
 		background-position: top left,		center center;
@@ -122,7 +122,7 @@
 			opacity: 0;
 			z-index: 1;
 			background-color: #ffffff;
-			background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 0, 0, 0.25) 5%, rgba(0, 0, 0, 0.5));
+			background-image: url("/images/overlay.png"), linear-gradient(60deg, rgba(255, 0, 0, 0.25) 5%, rgba(0, 0, 0, 0.5));
 			background-repeat: repeat,			no-repeat;
 			background-size: 100px 100px, cover;
 			background-position: top left,		center center;
@@ -983,7 +983,6 @@
 
 				#footer .copyright li:first-child {
 					border-left: 0;
-					/* NEW: Added these two lines to remove extra space for perfect centering */
 					margin-left: 0;
 					padding-left: 0;
 				}
@@ -1062,10 +1061,38 @@
 }
 
 /* ================================
-My Custom Footer Button Styles
+My Custom Styles
 ================================
 */
+
+/* Stacked buttons in the main content footer */
 #main footer button {
 	display: block;
 	margin: 1em auto;
+}
+
+/* Styles for the Skills Page */
+.skills-container h2 {
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+
+.skills-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.skills-list li {
+	display: inline-block;
+	background: #333;
+	color: #fff;
+	padding: 0.5em 1.25em;
+	margin: 0.5em;
+	border-radius: 5px;
+	font-size: 0.9em;
+	font-weight: 300;
+	text-transform: none;
+	letter-spacing: 0.075em;
 }

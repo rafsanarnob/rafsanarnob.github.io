@@ -505,23 +505,6 @@ My Custom Styles
 .skills-container + footer {
 	margin-top: 3.5em;
 
-	/* ================================
-Mobile Performance Fix
-================================
-*/
-@media screen and (max-width: 480px) {
-
-	#main {
-		/* Fallback to the solid background for smooth scrolling on mobile */
-		background: #111d;
-
-		/* Turn off the expensive blur effect */
-		-webkit-backdrop-filter: none;
-		backdrop-filter: none;
-
-		/* Remove the border we added for the glass effect */
-		border: none;
-	}
-
 }
+
 
